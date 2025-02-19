@@ -132,7 +132,6 @@ public class QuickCheckTest {
     assertEquals(48, result, "Sum of odd values in multi-level tree should be 48");
   }
 
-
   // Used for testing purposes so you can still see your print statements when debugging
   // You do not need to modify this 
   static class TeeOutputStream extends OutputStream {
