@@ -36,6 +36,14 @@ public class QuickCheck {
    * @return the sum of all odd-valued nodes
    */
   public static int oddSum(TreeNode<Integer> node) {
-      return -1;
+    if (node == null) return 0;
+    
+    int sum = 0;
+
+    if (node.value % 2 != 0) {
+      sum += node.value;
+    }
+
+      return sum + oddSum(node.left) + oddSum(node.right);
   }
 }
