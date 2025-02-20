@@ -15,6 +15,14 @@ public class QuickCheck {
    * @param node the root node of the binary tree
    */
   public static void printLongerThan7(TreeNode<String> node) {
+    if (node == null) return;
+
+    if (node.value.length() > 7) {
+      System.out.println(node.value);
+    }
+
+    printLongerThan7(node.left);
+    printLongerThan7(node.right);
   }
 
   /**
